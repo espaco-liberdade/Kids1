@@ -1,0 +1,1140 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 1: Bom Dia, Sentimentos!</title>
+    
+    <style>
+        /* Importando fontes do Google */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+        /* Estilos específicos para a aula, encapsulados pelo ID #apostila-aula-kids-1 */
+        #apostila-aula-kids-1 { 
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #3a3a3a;
+            line-height: 1.7; 
+            background-color: #ffffff;
+            padding: 25px; 
+            border: 1px solid #e0e0e0;
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        #apostila-aula-kids-1 h1 { 
+            color: #f39c12; /* Laranja para o tema da manhã */
+            border-bottom: 4px solid #3498db; /* Azul claro */
+            padding-bottom: 15px;
+            font-size: 28px; 
+            margin-top: 0; 
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Fredoka One', cursive;
+            letter-spacing: 1px;
+        }
+
+        #apostila-aula-kids-1 h2 { 
+            color: #3498db;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 24px; 
+            border-bottom: 2px solid #aed6f1;
+            padding-bottom: 10px;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #apostila-aula-kids-1 h3 { 
+            color: #2980b9;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 20px; 
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        #apostila-aula-kids-1 h4 { 
+            color: #16a085;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px; 
+            font-weight: 600;
+        }
+
+        #apostila-aula-kids-1 table.vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); 
+            font-size: 14px;
+            border-radius: 8px;
+            overflow: hidden; 
+        }
+
+        #apostila-aula-kids-1 .vocab-table th, 
+        #apostila-aula-kids-1 .vocab-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        #apostila-aula-kids-1 .vocab-table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #apostila-aula-kids-1 .vocab-table tr:nth-child(even) {
+            background-color: #f9f9f9; 
+        }
+
+        #apostila-aula-kids-1 .vocab-table tr:hover {
+            background-color: #e6f3ff;
+        }
+
+        #apostila-aula-kids-1 .nota-dica { 
+            background-color: #fef9e7; 
+            border-left: 5px solid #f1c40f; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        #apostila-aula-kids-1 .nota-dica h4 {
+            color: #d35400;
+            margin-top: 0;
+            font-size: 17px; 
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #apostila-aula-kids-1 .secao-pratica { 
+            background-color: #e8f8f5; 
+            border-left: 5px solid #1abc9c; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        #apostila-aula-kids-1 .secao-pratica h3 {
+            color: #16a085; 
+            margin-top: 0;
+            font-size: 20px; 
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #apostila-aula-kids-1 code, 
+        #apostila-aula-kids-1 .ipa-symbol { 
+            background-color: #f0e6ff;
+            padding: 2px 6px; 
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8e44ad;
+            font-size: 0.95em;
+            border: 1px solid #d2b4de;
+        }
+
+        #apostila-aula-kids-1 .emoji-small { font-size: 1em; } 
+        #apostila-aula-kids-1 .emoji-medium { font-size: 1.3em; }
+        #apostila-aula-kids-1 .emoji-large { font-size: 1.6em; }
+
+        #apostila-aula-kids-1 .vocab-table .ipa-column {
+            font-family: 'Courier New', Courier, monospace;
+            color: #8e44ad; 
+            font-weight: bold;
+            font-size: 0.9em;
+            display: block; 
+            margin-bottom: 3px;
+        }
+        
+        #apostila-aula-kids-1 .ipa-phrase-block {
+            display: block; 
+            font-size: 0.85em;
+            margin-top: 4px; 
+            margin-bottom: 8px;
+        }
+        #apostila-aula-kids-1 .ipa-phrase-block code { 
+            background-color: #f0e6ff;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8e44ad;
+            border: 1px solid #d2b4de;
+        }
+
+        #apostila-aula-kids-1 .example-word {
+            font-weight: bold;
+            color: #2980b9; 
+        }
+        
+        /* Estilo para a tradução nas tabelas */
+        #apostila-aula-kids-1 .translation-in-cell {
+            display: block;
+            font-size: 0.9em;
+            color: #555;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        #apostila-aula-kids-1 .theme-intro-kids { 
+            background-color: #fef5e7; /* Amarelo claro para o tema da manhã */
+            border: 2px dashed #f39c12; 
+            padding: 15px; 
+            margin-bottom: 25px; 
+            border-radius: 10px;
+            text-align: center;
+            font-style: italic;
+            font-size: 17px; 
+        }
+        #apostila-aula-kids-1 .theme-intro-kids p {
+            margin: 0;
+            color: #b9770e; 
+        }
+
+        /* BOTOES DE AUDIO */
+        #apostila-aula-kids-1 .btn-container {
+            white-space: nowrap;
+            margin-top: 5px;
+        }
+
+        /* Botão Original (Link externo) */
+        #apostila-aula-kids-1 .audio-link { 
+            background-color: #f39c12; 
+            color: white !important; 
+            padding: 4px 8px; 
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer;
+            font-size: 0.85em; 
+            margin-right: 3px; 
+            transition: background-color 0.2s;
+            text-decoration: none; 
+            display: inline-block; 
+        }
+        #apostila-aula-kids-1 .audio-link:hover {
+            background-color: #e67e22; 
+        }
+
+        /* Botão Novo (Play Inline) */
+        #apostila-aula-kids-1 .inline-play-btn { 
+            background-color: #2ecc71; /* Verde */
+            color: white !important; 
+            padding: 4px 8px; 
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer;
+            font-size: 0.85em; 
+            transition: background-color 0.2s;
+            display: inline-block; 
+        }
+        #apostila-aula-kids-1 .inline-play-btn:hover {
+            background-color: #27ae60; 
+        }
+
+        #apostila-aula-kids-1 .exercise-list {
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+
+        #apostila-aula-kids-1 .exercise-list li {
+            margin-bottom: 15px;
+            padding-left: 25px; 
+            position: relative;
+        }
+
+        #apostila-aula-kids-1 .exercise-list li::before {
+            content: "☀️"; /* Emoji de sol para o tema */
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        #apostila-aula-kids-1 p, 
+        #apostila-aula-kids-1 ul, 
+        #apostila-aula-kids-1 ol,
+        #apostila-aula-kids-1 li {
+            margin: 0 0 1em 0; 
+            padding: 0; 
+            font-size: 1em; 
+            line-height: 1.7; 
+        }
+        #apostila-aula-kids-1 ul ul, 
+        #apostila-aula-kids-1 ol ol,
+        #apostila-aula-kids-1 ul ol,
+        #apostila-aula-kids-1 ol ul { 
+            margin-left: 20px; 
+            margin-top: 0.5em; 
+        }
+        #apostila-aula-kids-1 .exercise-list {
+             margin-left: 0; 
+        }
+
+        #apostila-aula-kids-1 .character-portuguese-phonetics {
+            font-size: 0.9em; 
+            color: #2E7D32;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            display: block; 
+            margin-top: 2px; 
+            margin-bottom: 2px; 
+        }
+        
+        #apostila-aula-kids-1 .vocab-table td .character-portuguese-phonetics {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        #apostila-aula-kids-1 .secao-pratica .exercise-list p,
+        #apostila-aula-kids-1 .secao-pratica .exercise-list li {
+            margin-bottom: 8px; 
+        }
+        #apostila-aula-kids-1 .secao-pratica .exercise-list .ipa-phrase-block {
+            margin-top: 2px; 
+            margin-bottom: 10px; 
+        }
+        #apostila-aula-kids-1 .dialogue {
+            border: 1px solid #fdebd0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #fef9e7;
+        }
+        #apostila-aula-kids-1 .dialogue p {
+            margin-bottom: 10px;
+        }
+        #apostila-aula-kids-1 .character {
+            font-weight: bold;
+            color: #d35400;
+        }
+        #apostila-aula-kids-1 .fill-in-blank {
+            display: inline-block;
+            width: 100px;
+            border-bottom: 2px solid #3498db;
+            margin: 0 5px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+
+<div id="apostila-aula-kids-1">
+    
+    <h1><span class="emoji-large">☀️</span> Aula 1: Bom Dia, Sentimentos! <span class="emoji-large">🥰</span><br />(Lesson 1: Good Morning, Feelings!)</h1>
+
+    <div class="theme-intro-kids">
+        <p>Booooom dia, dorminhoco! 😴 O sol já está lá fora dizendo "hello!". É hora de acordar e começar um novo dia. Mas antes de pular da cama... como você está se sentindo? Vamos aprender a falar sobre nossos sonhos e sentimentos em inglês!</p>
+    </div>
+
+    <div class="nota-dica">
+        <h4><span class="emoji-small">💡</span> Para os Adultos: Objetivos da Aula</h4>
+        <ul>
+            <li>Aprender cumprimentos matinais (<strong>Good morning!</strong>) e frases de ação (<strong>Wake up!</strong>).</li>
+            <li>Introduzir o vocabulário do quarto (<strong>bed, pillow, window</strong>).</li>
+            <li><strong>Foco Principal:</strong> Ensinar vocabulário de sentimentos (<strong>happy, sad, sleepy</strong>) e como perguntar sobre eles (<strong>How are you feeling?</strong>).</li>
+            <li>Iniciar conversas sobre sonhos (<strong>What did you dream about?</strong>).</li>
+        </ul>
+    </div>
+
+    <h2><span class="emoji-medium">🧠</span> Vocabulário do Quarto e Sentimentos</h2>
+    <p>Vamos aprender o nome das coisas no nosso quarto e como estamos nos sentindo!</p>
+
+    <table class="vocab-table">
+        <thead>
+            <tr>
+                <th>Inglês + Áudio</th>
+                <th>Tradução + Pronúncia</th>
+                <th>Inglês + Áudio</th>
+                <th>Tradução + Pronúncia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="example-word">Bed</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Bed&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Bed')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Cama<code class="ipa-column">/bɛd/</code><span class="character-portuguese-phonetics">(BÉD)</span></td>
+                
+                <td>
+                    <span class="example-word">Happy</span> 😊
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Happy&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Happy')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Feliz<code class="ipa-column">/ˈhæpi/</code><span class="character-portuguese-phonetics">(RÉ-PI)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Pillow</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Pillow&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Pillow')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Travesseiro<code class="ipa-column">/ˈpɪloʊ/</code><span class="character-portuguese-phonetics">(PÍ-LOU)</span></td>
+                
+                <td>
+                    <span class="example-word">Sad</span> 😢
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Sad&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Sad')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Triste<code class="ipa-column">/sæd/</code><span class="character-portuguese-phonetics">(SÉD)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Blanket</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Blanket&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Blanket')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Cobertor / Edredom<code class="ipa-column">/ˈblæŋkɪt/</code><span class="character-portuguese-phonetics">(BLÉN-KET)</span></td>
+                
+                <td>
+                    <span class="example-word">Sleepy</span> 😴
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Sleepy&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Sleepy')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Com sono<code class="ipa-column">/ˈsliːpi/</code><span class="character-portuguese-phonetics">(S-LÍ-PI)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Pajamas</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Pajamas&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Pajamas')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Pijama<code class="ipa-column">/pəˈdʒɑːməz/</code><span class="character-portuguese-phonetics">(PA-DJÁ-MAS)</span></td>
+                
+                <td>
+                    <span class="example-word">Tired</span> 🥱
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Tired&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Tired')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Cansado<code class="ipa-column">/ˈtaɪərd/</code><span class="character-portuguese-phonetics">(TÁI-ERD)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Window</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Window&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Window')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Janela<code class="ipa-column">/ˈwɪndoʊ/</code><span class="character-portuguese-phonetics">(UÍN-DOU)</span></td>
+                
+                <td>
+                    <span class="example-word">Scared</span> 😨
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Scared&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Scared')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Assustado / Com medo<code class="ipa-column">/skɛərd/</code><span class="character-portuguese-phonetics">(S-KÉRD)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Door</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Door&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Door')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Porta<code class="ipa-column">/dɔːr/</code><span class="character-portuguese-phonetics">(DÓR)</span></td>
+                
+                <td>
+                    <span class="example-word">Angry</span> 😠
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Angry&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Angry')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Bravo<code class="ipa-column">/ˈæŋɡri/</code><span class="character-portuguese-phonetics">(ÉN-GRI)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Lamp</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Lamp&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Lamp')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Abajur / Luminária<code class="ipa-column">/læmp/</code><span class="character-portuguese-phonetics">(LÉMP)</span></td>
+                
+                <td>
+                    <span class="example-word">Excited</span> 🤩
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Excited&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Excited')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Animado / Empolgado<code class="ipa-column">/ɪkˈsaɪtɪd/</code><span class="character-portuguese-phonetics">(EK-SÁI-TET)</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="example-word">Slippers</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Slippers&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Slippers')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Pantufas<code class="ipa-column">/ˈslɪpərz/</code><span class="character-portuguese-phonetics">(S-LÍ-PERS)</span></td>
+                
+                <td>
+                    <span class="example-word">Brave</span> 💪
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Brave&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Brave')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>Corajoso<code class="ipa-column">/breɪv/</code><span class="character-portuguese-phonetics">(BRÊIV)</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2><span class="emoji-medium">📖</span> Nossas Frases da Manhã</h2>
+    <p>Pratique o diálogo abaixo: o pai/mãe começa na coluna 1 e a criança responde na coluna 2.</p>
+
+    <table class="vocab-table">
+        <thead>
+            <tr>
+                <th style="width: 50%;">Frase do Guia (Pai/Mãe)</th>
+                <th style="width: 50%;">Resposta do Pequeno (Criança)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 1 -->
+            <tr>
+                <td>
+                    <span class="example-word">Good morning!</span>
+                    <span class="translation-in-cell">(Bom dia!)</span>
+                    <code class="ipa-column">/ɡʊd ˈmɔːrnɪŋ/</code>
+                    <span class="character-portuguese-phonetics">(GÚD MÓR-NIN)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Good%20morning!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Good morning!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Good morning, Daddy!</span>
+                    <span class="translation-in-cell">(Bom dia, papai!)</span>
+                    <code class="ipa-column">/ɡʊd ˈmɔːrnɪŋ ˈdædi/</code>
+                    <span class="character-portuguese-phonetics">(GÚD MÓR-NIN DÉ-DI)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Good%20morning%2C%20Daddy!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Good morning, Daddy!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 2 -->
+            <tr>
+                <td>
+                    <span class="example-word">Wake up, sleepyhead!</span>
+                    <span class="translation-in-cell">(Acorde, dorminhoco!)</span>
+                    <code class="ipa-column">/weɪk ʌp ˈsliːpihɛd/</code>
+                    <span class="character-portuguese-phonetics">(UÊIK ÃP S-LÍ-PI-RÉD)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Wake%20up%2C%20sleepyhead!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Wake up, sleepyhead!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I am awake!</span>
+                    <span class="translation-in-cell">(Eu estou acordado!)</span>
+                    <code class="ipa-column">/aɪ æm əˈweɪk/</code>
+                    <span class="character-portuguese-phonetics">(ÁI ÉM A-UÊIK)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20am%20awake!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I am awake!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 3 -->
+            <tr>
+                <td>
+                    <span class="example-word">Time to get up.</span>
+                    <span class="translation-in-cell">(Hora de levantar.)</span>
+                    <code class="ipa-column">/taɪm tuː ɡɛt ʌp/</code>
+                    <span class="character-portuguese-phonetics">(TÁIM TÚ GUÉT ÃP)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Time%20to%20get%20up.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Time to get up.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Just five more minutes, please.</span>
+                    <span class="translation-in-cell">(Só mais cinco minutos, por favor.)</span>
+                    <code class="ipa-column">/dʒʌst faɪv mɔːr ˈmɪnɪts pliːz/</code>
+                    <span class="character-portuguese-phonetics">(DJÂST FÁIV MÓR MÍ-NETS, PLÍZ)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Just%20five%20more%20minutes%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Just five more minutes, please.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 4 -->
+            <tr>
+                <td>
+                    <span class="example-word">How are you feeling today?</span>
+                    <span class="translation-in-cell">(Como você está se sentindo hoje?)</span>
+                    <code class="ipa-column">/haʊ ɑːr juː ˈfiːlɪŋ təˈdeɪ/</code>
+                    <span class="character-portuguese-phonetics">(RÁU ÁR IÚ FÍ-LIN TU-DÊI?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=How%20are%20you%20feeling%20today%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('How are you feeling today?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I am happy and excited!</span>
+                    <span class="translation-in-cell">(Eu estou feliz e animado!)</span>
+                    <code class="ipa-column">/aɪ æm ˈhæpi ænd ɪkˈsaɪtɪd/</code>
+                    <span class="character-portuguese-phonetics">(ÁI ÉM RÉ-PI ÉND EK-SÁI-TED!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20am%20happy%20and%20excited!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I am happy and excited!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 5 -->
+            <tr>
+                <td>
+                    <span class="example-word">Open the window, please.</span>
+                    <span class="translation-in-cell">(Abra a janela, por favor.)</span>
+                    <code class="ipa-column">/ˈoʊpən ðə ˈwɪndoʊ pliːz/</code>
+                    <span class="character-portuguese-phonetics">(ÔU-PEN DA UÍN-DOU PLÍZ)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Open%20the%20window%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Open the window, please.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Look! It's a sunny day!</span>
+                    <span class="translation-in-cell">(Olhe! É um dia ensolarado!)</span>
+                    <code class="ipa-column">/lʊk ɪts ə ˈsʌni deɪ/</code>
+                    <span class="character-portuguese-phonetics">(LÚK! ÍTS A SÂ-NI DÊI!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Look!%20It's%20a%20sunny%20day!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Look! It\'s a sunny day!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 6 -->
+            <tr>
+                <td>
+                    <span class="example-word">Did you sleep well?</span>
+                    <span class="translation-in-cell">(Você dormiu bem?)</span>
+                    <code class="ipa-column">/dɪd juː sliːp wɛl/</code>
+                    <span class="character-portuguese-phonetics">(DÍD IÚ S-LÍP UÉL?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Did%20you%20sleep%20well%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Did you sleep well?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yes, I had a good dream.</span>
+                    <span class="translation-in-cell">(Sim, eu tive um bom sonho.)</span>
+                    <code class="ipa-column">/jɛs aɪ hæd ə ɡʊd driːm/</code>
+                    <span class="character-portuguese-phonetics">(IÉS, ÁI RÉD A GÚD DRÍM)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20I%20had%20a%20good%20dream.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yes, I had a good dream.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 7 -->
+             <tr>
+                <td>
+                    <span class="example-word">Are you ready for the day?</span>
+                    <span class="translation-in-cell">(Você está pronto(a) para o dia?)</span>
+                    <code class="ipa-column">/ɑːr juː ˈrɛdi fɔːr ðə deɪ/</code>
+                    <span class="character-portuguese-phonetics">(ÁR IÚ RÉ-DI FÓR DA DÊI?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Are%20you%20ready%20for%20the%20day%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Are you ready for the day?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yes! Let's go play!</span>
+                    <span class="translation-in-cell">(Sim! Vamos brincar!)</span>
+                    <code class="ipa-column">/jɛs lɛts ɡoʊ pleɪ/</code>
+                    <span class="character-portuguese-phonetics">(IÉS! LÉTS GÔU PLÊI!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes!%20Let's%20go%20play!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yes! Let\'s go play!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 8 -->
+            <tr>
+                <td>
+                    <span class="example-word">Time for breakfast!</span>
+                    <span class="translation-in-cell">(Hora do café da manhã!)</span>
+                    <code class="ipa-column">/taɪm fɔːr ˈbrɛkfəst/</code>
+                    <span class="character-portuguese-phonetics">(TÁIM FÓR BRÉK-FÂST)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Time%20for%20breakfast!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Time for breakfast!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yummy! I am hungry.</span>
+                    <span class="translation-in-cell">(Delícia! Estou com fome.)</span>
+                    <code class="ipa-column">/ˈjʌmi aɪ æm ˈhʌŋɡri/</code>
+                    <span class="character-portuguese-phonetics">(IÂ-MI! ÁI ÉM RÂN-GRI)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yummy!%20I%20am%20hungry.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yummy! I am hungry.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 9 -->
+            <tr>
+                <td>
+                    <span class="example-word">Do you want milk?</span>
+                    <span class="translation-in-cell">(Você quer leite?)</span>
+                    <code class="ipa-column">/duː juː wɒnt mɪlk/</code>
+                    <span class="character-portuguese-phonetics">(DÚ IÚ UÓNT MILK?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Do%20you%20want%20milk%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Do you want milk?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yes, please.</span>
+                    <span class="translation-in-cell">(Sim, por favor.)</span>
+                    <code class="ipa-column">/jɛs pliːz/</code>
+                    <span class="character-portuguese-phonetics">(IÉS, PLÍZ)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20please.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yes, please.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 10 -->
+            <tr>
+                <td>
+                    <span class="example-word">Let's get dressed.</span>
+                    <span class="translation-in-cell">(Vamos nos vestir.)</span>
+                    <code class="ipa-column">/lɛts ɡɛt drɛst/</code>
+                    <span class="character-portuguese-phonetics">(LÉTS GUÉT DRÉST)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Let's%20get%20dressed.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Let\'s get dressed.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Where is my shirt?</span>
+                    <span class="translation-in-cell">(Onde está minha camisa?)</span>
+                    <code class="ipa-column">/wɛər ɪz maɪ ʃɜːrt/</code>
+                    <span class="character-portuguese-phonetics">(UÉR ÍZ MÁI CHÂRT?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Where%20is%20my%20shirt%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Where is my shirt?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 11 -->
+            <tr>
+                <td>
+                    <span class="example-word">Put on your shoes.</span>
+                    <span class="translation-in-cell">(Coloque seus sapatos.)</span>
+                    <code class="ipa-column">/pʊt ɒn jɔːr ʃuːz/</code>
+                    <span class="character-portuguese-phonetics">(PÚT ÓN IÓR CHÚS)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Put%20on%20your%20shoes.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Put on your shoes.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I can't find them!</span>
+                    <span class="translation-in-cell">(Eu não consigo achá-los!)</span>
+                    <code class="ipa-column">/aɪ kænt faɪnd ðɛm/</code>
+                    <span class="character-portuguese-phonetics">(ÁI KÉNT FÁIND DÉM!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20can't%20find%20them!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I can\'t find them!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 12 -->
+            <tr>
+                <td>
+                    <span class="example-word">Brush your teeth.</span>
+                    <span class="translation-in-cell">(Escove seus dentes.)</span>
+                    <code class="ipa-column">/brʌʃ jɔːr tiːθ/</code>
+                    <span class="character-portuguese-phonetics">(BRÂCH IÓR TÍF)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Brush%20your%20teeth.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Brush your teeth.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Look! They are clean.</span>
+                    <span class="translation-in-cell">(Olhe! Eles estão limpos.)</span>
+                    <code class="ipa-column">/lʊk ðeɪ ɑːr kliːn/</code>
+                    <span class="character-portuguese-phonetics">(LÚK! DÊI ÁR CLÍN)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Look!%20They%20are%20clean.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Look! They are clean.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 13 -->
+            <tr>
+                <td>
+                    <span class="example-word">Wash your face.</span>
+                    <span class="translation-in-cell">(Lave seu rosto.)</span>
+                    <code class="ipa-column">/wɒʃ jɔːr feɪs/</code>
+                    <span class="character-portuguese-phonetics">(UÓCH IÓR FÊIS)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Wash%20your%20face.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Wash your face.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">The water is cold!</span>
+                    <span class="translation-in-cell">(A água está fria!)</span>
+                    <code class="ipa-column">/ðə ˈwɔːtər ɪz koʊld/</code>
+                    <span class="character-portuguese-phonetics">(DA UÓ-TER ÍZ CÔULD!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=The%20water%20is%20cold!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('The water is cold!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 14 -->
+            <tr>
+                <td>
+                    <span class="example-word">Comb your hair.</span>
+                    <span class="translation-in-cell">(Penteie seu cabelo.)</span>
+                    <code class="ipa-column">/koʊm jɔːr hɛər/</code>
+                    <span class="character-portuguese-phonetics">(CÔUM IÓR RÉR)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Comb%20your%20hair.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Comb your hair.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Ouch! Be careful.</span>
+                    <span class="translation-in-cell">(Ai! Tenha cuidado.)</span>
+                    <code class="ipa-column">/aʊtʃ biː ˈkɛərfəl/</code>
+                    <span class="character-portuguese-phonetics">(ÁUCH! BÍ KÉR-FUL)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Ouch!%20Be%20careful.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Ouch! Be careful.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 15 -->
+            <tr>
+                <td>
+                    <span class="example-word">Is your bag ready?</span>
+                    <span class="translation-in-cell">(Sua mochila está pronta?)</span>
+                    <code class="ipa-column">/ɪz jɔːr bæɡ ˈrɛdi/</code>
+                    <span class="character-portuguese-phonetics">(ÍZ IÓR BÉG RÉ-DI?)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Is%20your%20bag%20ready%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Is your bag ready?')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Yes, I have my books.</span>
+                    <span class="translation-in-cell">(Sim, eu tenho meus livros.)</span>
+                    <code class="ipa-column">/jɛs aɪ hæv maɪ bʊks/</code>
+                    <span class="character-portuguese-phonetics">(IÉS, ÁI Rév MÁI BÚKS)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Yes%2C%20I%20have%20my%20books.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Yes, I have my books.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 16 -->
+            <tr>
+                <td>
+                    <span class="example-word">Hurry up, we are late!</span>
+                    <span class="translation-in-cell">(Depressa, estamos atrasados!)</span>
+                    <code class="ipa-column">/ˈhʌri ʌp wiː ɑːr leɪt/</code>
+                    <span class="character-portuguese-phonetics">(RÂ-RI ÃP, UÍ ÁR LÊIT!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Hurry%20up%2C%20we%20are%20late!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Hurry up, we are late!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I am coming!</span>
+                    <span class="translation-in-cell">(Estou indo!)</span>
+                    <code class="ipa-column">/aɪ æm ˈkʌmɪŋ/</code>
+                    <span class="character-portuguese-phonetics">(ÁI ÉM CÂ-MIN!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20am%20coming!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I am coming!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 17 -->
+            <tr>
+                <td>
+                    <span class="example-word">Put on your jacket.</span>
+                    <span class="translation-in-cell">(Coloque sua jaqueta.)</span>
+                    <code class="ipa-column">/pʊt ɒn jɔːr ˈdʒækɪt/</code>
+                    <span class="character-portuguese-phonetics">(PÚT ÓN IÓR DJÉ-KET)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Put%20on%20your%20jacket.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Put on your jacket.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">But it is not cold!</span>
+                    <span class="translation-in-cell">(Mas não está frio!)</span>
+                    <code class="ipa-column">/bʌt ɪt ɪz nɒt koʊld/</code>
+                    <span class="character-portuguese-phonetics">(BÂT ÍT ÍZ NÓT CÔULD!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=But%20it%20is%20not%20cold!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('But it is not cold!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 18 -->
+            <tr>
+                <td>
+                    <span class="example-word">Let's go to school.</span>
+                    <span class="translation-in-cell">(Vamos para a escola.)</span>
+                    <code class="ipa-column">/lɛts ɡoʊ tuː skuːl/</code>
+                    <span class="character-portuguese-phonetics">(LÉTS GÔU TÚ S-KÚL)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Let's%20go%20to%20school.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Let\'s go to school.')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">Bye bye, house!</span>
+                    <span class="translation-in-cell">(Tchau tchau, casa!)</span>
+                    <code class="ipa-column">/baɪ baɪ haʊs/</code>
+                    <span class="character-portuguese-phonetics">(BÁI BÁI, RÁUS!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Bye%20bye%2C%20house!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Bye bye, house!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 19 -->
+            <tr>
+                <td>
+                    <span class="example-word">Have a good day!</span>
+                    <span class="translation-in-cell">(Tenha um bom dia!)</span>
+                    <code class="ipa-column">/hæv ə ɡʊd deɪ/</code>
+                    <span class="character-portuguese-phonetics">(RÉV A GÚD DÊI!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Have%20a%20good%20day!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('Have a good day!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">You too, Mommy!</span>
+                    <span class="translation-in-cell">(Você também, mamãe!)</span>
+                    <code class="ipa-column">/juː tuː ˈmɒmi/</code>
+                    <span class="character-portuguese-phonetics">(IÚ TÚ, MÓ-MI!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=You%20too%2C%20Mommy!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('You too, Mommy!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+            <!-- 20 -->
+            <tr>
+                <td>
+                    <span class="example-word">I love you!</span>
+                    <span class="translation-in-cell">(Eu te amo!)</span>
+                    <code class="ipa-column">/aɪ lʌv juː/</code>
+                    <span class="character-portuguese-phonetics">(ÁI LÂV IÚ!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20love%20you!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I love you!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+                <td>
+                    <span class="example-word">I love you too!</span>
+                    <span class="translation-in-cell">(Eu te amo também!)</span>
+                    <code class="ipa-column">/aɪ lʌv juː tuː/</code>
+                    <span class="character-portuguese-phonetics">(ÁI LÂV IÚ TÚ!)</span>
+                    <div class="btn-container">
+                        <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20love%20you%20too!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                        <button onclick="playAudio('I love you too!')" class="inline-play-btn">▶️</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2><span class="emoji-medium">💬</span> Nossa Conversa Matinal</h2>
+    <p>Vamos praticar um diálogo completo de "bom dia"!</p>
+
+    <h3>Diálogo 1: Acordando com Carinho</h3>
+    <div class="dialogue">
+        <p>
+            <span class="character">Mamãe:</span> Good morning, Lina. Time to wake up! 
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Good%20morning%2C%20Lina.%20Time%20to%20wake%20up!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Good morning, Lina. Time to wake up!')" class="inline-play-btn">▶️</button>
+            (Bom dia, Lina. Hora de acordar!)<br>
+            <span class="ipa-phrase-block"><code>/ɡʊd ˈmɔːrnɪŋ ˈliːnə taɪm tuː weɪk ʌp/</code></span>
+        </p>
+
+        <p>
+            <span class="character">Lina:</span> (boceja) Good morning, mommy... I'm still sleepy. 
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Good%20morning%2C%20mommy...%20I'm%20still%20sleepy.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Good morning, mommy... I\'m still sleepy.')" class="inline-play-btn">▶️</button>
+            (Bom dia, mamãe... Ainda estou com sono.)<br>
+            <span class="ipa-phrase-block"><code>/ɡʊd ˈmɔːrnɪŋ ˈmɒmi aɪm stɪl ˈsliːpi/</code></span>
+        </p>
+    </div>
+    
+    <h3>Diálogo 2: Como Você Está se Sentindo?</h3>
+    <div class="dialogue">
+        <p>
+            <span class="character">Papai:</span> Good morning, Leo! How are you feeling? 
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Good%20morning%2C%20Leo!%20How%20are%20you%20feeling%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Good morning, Leo! How are you feeling?')" class="inline-play-btn">▶️</button>
+            (Bom dia, Leo! Como você está se sentindo?)<br>
+            <span class="ipa-phrase-block"><code>/ɡʊd ˈmɔːrnɪŋ ˈliːoʊ haʊ ɑːr juː ˈfiːlɪŋ/</code></span>
+        </p>
+
+        <p>
+            <span class="character">Leo:</span> I'm happy! I'm excited to play today!
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I'm%20happy!%20I'm%20excited%20to%20play%20today!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('I\'m happy! I\'m excited to play today!')" class="inline-play-btn">▶️</button>
+            (Estou feliz! Estou animado para brincar hoje!)<br>
+            <span class="ipa-phrase-block"><code>/aɪm ˈhæpi aɪm ɪkˈsaɪtɪd tuː pleɪ təˈdeɪ/</code></span>
+        </p>
+    </div>
+
+    <h3>Diálogo 3: Falando sobre Sonhos</h3>
+    <div class="dialogue">
+        <p>
+            <span class="character">Mamãe:</span> Did you sleep well, sweetie? What did you dream about?
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Did%20you%20sleep%20well%2C%20sweetie%3F%20What%20did%20you%20dream%20about%3F&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Did you sleep well, sweetie? What did you dream about?')" class="inline-play-btn">▶️</button>
+            (Você dormiu bem, docinho? Sobre o que você sonhou?)<br>
+            <span class="ipa-phrase-block"><code>/dɪd juː sliːp wɛl ˈswiːti wɒt dɪd juː driːm əˈbaʊt/</code></span>
+        </p>
+
+        <p>
+            <span class="character">Lina:</span> I had a nightmare. I'm a little scared.
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=I%20had%20a%20nightmare.%20I'm%20a%20little%20scared.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('I had a nightmare. I\'m a little scared.')" class="inline-play-btn">▶️</button>
+            (Eu tive um pesadelo. Estou com um pouco de medo.)<br>
+            <span class="ipa-phrase-block"><code>/aɪ hæd ə ˈnaɪtmɛər aɪm ə ˈlɪtl skɛərd/</code></span>
+        </p>
+        
+        <p>
+            <span class="character">Mamãe:</span> Oh, it's okay. It was just a dream. Give me a hug.
+            <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Oh%2C%20it's%20okay.%20It%20was%20just%20a%20dream.%20Give%20me%20a%20hug.&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+            <button onclick="playAudio('Oh, it\'s okay. It was just a dream. Give me a hug.')" class="inline-play-btn">▶️</button>
+            (Oh, tudo bem. Foi só um sonho. Me dá um abraço.)<br>
+            <span class="ipa-phrase-block"><code>/oʊ ɪts ˌoʊˈkeɪ ɪt wəz dʒəst ə driːm ɡɪv miː ə hʌɡ/</code></span>
+        </p>
+    </div>
+
+    <div class="nota-dica">
+        <h4><span class="emoji-small">🗣️</span> Dica de Pronúncia: O som do "G" forte</h4>
+        <p>O som do "g" em <span class="example-word">good</span> e <span class="example-word">get</span> é forte e vem do fundo da garganta. É diferente do "g" de "gelo" em português.</p>
+        <p>Tente fazer o som "ga-ga-ga" como um bebê. É esse o som! Vamos praticar:</p>
+        <ul>
+            <li>
+                <span class="example-word">Good</span> <span class="ipa-symbol">/ɡʊd/</span> (GÚD) 
+                <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Good&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                <button onclick="playAudio('Good')" class="inline-play-btn">▶️</button>
+            </li>
+            <li>
+                <span class="example-word">Get</span> <span class="ipa-symbol">/ɡɛt/</span> (GUÉT) 
+                <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Get&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                <button onclick="playAudio('Get')" class="inline-play-btn">▶️</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="secao-pratica">
+        <h3>Vamos Brincar e Aprender! 🎉</h3>
+        <h4>O Jogo das Caretas: "Show me your face!" (Mostre-me sua cara!)</h4>
+        <p>Vamos praticar os sentimentos! O adulto vai dar o comando e a criança tem que fazer a careta correspondente.</p>
+        <ul class="exercise-list">
+            <li>
+                <p>Papai/Mamãe diz: "Show me a <span class="example-word">happy</span> face!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Show%20me%20a%20happy%20face!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('Show me a happy face!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/ʃoʊ miː ə ˈhæpi feɪs/</code></span>
+                    (A criança faz um grande sorriso!)
+                </p>
+            </li>
+            <li>
+                <p>Papai/Mamãe diz: "Show me a <span class="example-word">sleepy</span> face!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Show%20me%20a%20sleepy%20face!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('Show me a sleepy face!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/ʃoʊ miː ə ˈsliːpi feɪs/</code></span>
+                    (A criança boceja e fecha os olhos).
+                </p>
+            </li>
+            <li>
+                <p>Papai/Mamãe diz: "Show me an <span class="example-word">angry</span> face!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Show%20me%20an%20angry%20face!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('Show me an angry face!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/ʃoʊ miː ən ˈæŋɡri feɪs/</code></span>
+                    (A criança franze a testa e faz cara de brava!).
+                </p>
+            </li>
+            <li>
+                <p>Papai/Mamãe diz: "Show me a <span class="example-word">scared</span> face!" 
+                    <a href="https://translate.google.com/translate_tts?ie=UTF-8&q=Show%20me%20a%20scared%20face!&tl=en&client=tw-ob" target="_blank" class="audio-link">🔗</a>
+                    <button onclick="playAudio('Show me a scared face!')" class="inline-play-btn">▶️</button>
+                    <br>
+                    <span class="ipa-phrase-block"><code>/ʃoʊ miː ə skɛərd feɪs/</code></span>
+                    (A criança arregala os olhos e faz cara de susto!).
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <h3>Parabéns, Estrelinha da Manhã! 🌟</h3>
+    <p>Que incrível! Você aprendeu a começar o dia falando inglês, contando como se sente e falando sobre seus sonhos. Agora, toda manhã será uma nova aventura! Você foi ótimo! Nos vemos na próxima aula!</p>
+
+</div>
+
+<!-- Script para fazer o botão de áudio Inline funcionar -->
+<script>
+    function playAudio(text) {
+        // Cria o link do Google TTS
+        var audioUrl = "https://translate.google.com/translate_tts?ie=UTF-8&q=" + encodeURIComponent(text) + "&tl=en&client=tw-ob";
+        
+        // Cria um novo objeto de áudio e toca
+        var audio = new Audio(audioUrl);
+        audio.play().catch(function(error) {
+            console.log("Erro ao reproduzir áudio: " + error);
+            alert("Não foi possível reproduzir o áudio automaticamente. Por favor, use o botão laranja (🔗).");
+        });
+    }
+</script>
+
+</body>
+</html>
